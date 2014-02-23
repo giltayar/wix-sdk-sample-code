@@ -1,5 +1,6 @@
 from collections import OrderedDict
 from datetime import datetime
+import pytz
 import httplib
 import urllib
 import itertools
@@ -9,22 +10,24 @@ import base64
 
 
 class ActivitiesApi(object):
-    def __init__(self, api_key, instance_id):
+    def __init__(self, api_id, instance_id, secret_key):
         self.instance_id = instance_id
-        self.api_key = api_key
+        self.api_id = api_id
+        self.secret_key = secret_key
 
-    def get_activities(self):
-        api_endpoint = ApiEndpoint("/v1/activities", self.api_key, self.instance_id,
-                                   now=datetime.now(), version="1.4.2")
+    def get_activity_types(self):
+        api_endpoint = ApiEndpoint("/v1/activities/types",
+                                   self.api_id, self.instance_id, self.secret_key,
+                                   now=datetime.now(pytz.utc), version="1.0.0")
 
         response = ApiEndpointHttpLibRequest(api_endpoint,
                                              ApiEndpointConnectionFactory(api_endpoint).connect()).\
-            create_request('GET', [], '')
+            create_request('GET', {}, '')
 
         if response.status == httplib.OK:
             return response.read()
         else:
-            raise ApiException(response.status, response.read)
+            raise ApiException(response.status, response.read())
 
 
 class ApiEndpoint(object):
@@ -32,19 +35,20 @@ class ApiEndpoint(object):
     host = 'openapi.wix.com'
     port = 443
 
-    def __init__(self, path, api_key, instance_id, version, now):
+    def __init__(self, path, api_id, instance_id, secret_key, version, now):
         self.now = now
         self.instance_id = instance_id
         self.version = version
-        self.api_key = api_key
+        self.api_id = api_id
+        self.secret_key = secret_key
         self.path = path
 
     @property
     def headers(self):
         return {
-            'x-wix-application-id': self.api_key,
+            'x-wix-application-id': self.api_id,
             'x-wix-instance-id': self.instance_id,
-            'x-wix-timestamp-id': self.now.isoformat(),
+            'x-wix-timestamp': self.now.isoformat(),
         }
 
     @property
@@ -54,7 +58,7 @@ class ApiEndpoint(object):
     @property
     def signature_headers(self):
         return {
-            'x-wix-application-id': self.api_key,
+            'x-wix-application-id': self.api_id,
             'x-wix-instance-id': self.instance_id,
         }
 
@@ -93,7 +97,7 @@ class ApiSignatureCalculator(object):
                          ([body] if body else []))
 
     def sign(self, to_sign):
-        return hmac.new(str(self.api_endpoint.api_key), msg=str(to_sign), digestmod=hashlib.sha256).digest()
+        return hmac.new(str(self.api_endpoint.secret_key), msg=str(to_sign), digestmod=hashlib.sha256).digest()
 
 
 class ApiEndpointHttpLibRequest(object):
@@ -142,3 +146,11 @@ class ApiException(Exception):
     def __init__(self, status_code, body):
         self.body = body
         self.status_code = status_code
+
+    def __repr__(self):
+        return 'ApiException("{}", "{}")'.format(self.body, self.status_code)
+
+    def __str__(self):
+        return 'ApiException({}, {})'.format(self.body, self.status_code)
+
+

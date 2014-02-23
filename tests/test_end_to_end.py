@@ -15,7 +15,9 @@ class EndToEndTests(unittest.TestCase):
 
         fake_api_server.redirect_api_endpoint_statics_to_fake_server()
 
-        api_endpoint = ApiEndpoint('/v1/activities', api_key="123456", instance_id="456", version='1.0.0',
+        api_endpoint = ApiEndpoint('/v1/activities',
+                                   api_id="123456", instance_id="456", secret_key='abc',
+                                   version='1.0.0',
                                    now=datetime(2000, 1, 1, 0, 1, 2, 3))
 
         api_endpoint_http_lib_request = ApiEndpointHttpLibRequest(api_endpoint,
@@ -27,10 +29,10 @@ class EndToEndTests(unittest.TestCase):
         self.assertEqual(FakeApiRequestHandler.last_method, 'GET')
         self.assertEqual(FakeApiRequestHandler.last_path, '/v1/activities?q1=qv1&version=1.0.0')
         self.assertEqual(FakeApiRequestHandler.last_headers.get('x-wix-instance-id'), '456')
-        self.assertEqual(FakeApiRequestHandler.last_headers.get('x-wix-timestamp-id'), '2000-01-01T00:01:02.000003')
+        self.assertEqual(FakeApiRequestHandler.last_headers.get('x-wix-timestamp'), '2000-01-01T00:01:02.000003')
         self.assertEqual(FakeApiRequestHandler.last_headers.get('h1'), 'hv1')
         self.assertEqual(FakeApiRequestHandler.last_headers.get('x-wix-application-id'), '123456')
-        self.assertEqual(FakeApiRequestHandler.last_headers.get('x-wix-signature'), 'IVR7Pi1cXTwjP-vMSphZqR7M5R545fZvm2u4cKckVAE=')
+        self.assertIsNotNone(FakeApiRequestHandler.last_headers.get('x-wix-signature'))
 
         fake_api_server.close()
 

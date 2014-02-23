@@ -10,7 +10,9 @@ class TestApiEndpointHttpLibRequest(TestCase):
         mock_connection = Mock()
         mock_connection.request.return_value = 4
 
-        api_endpoint = ApiEndpoint('/v1/activities', api_key="123456", instance_id="456", version='1.0.0',
+        api_endpoint = ApiEndpoint('/v1/activities',
+                                   api_id="123456",
+                                   instance_id="456", version='1.0.0', secret_key='abc',
                                    now=datetime(2000, 1, 1, 0, 1, 2, 3))
 
         response = ApiEndpointHttpLibRequest(api_endpoint, mock_connection)
@@ -21,10 +23,10 @@ class TestApiEndpointHttpLibRequest(TestCase):
             'GET',
             body='body',
             headers={'x-wix-instance-id': '456',
-                     'x-wix-timestamp-id': '2000-01-01T00:01:02.000003',
+                     'x-wix-timestamp': '2000-01-01T00:01:02.000003',
                      'h1': 'hv1',
                      'x-wix-application-id':  '123456',
-                     'x-wix-signature': 'IVR7Pi1cXTwjP-vMSphZqR7M5R545fZvm2u4cKckVAE='},
+                     'x-wix-signature': 'KVVp-F8PbuM5tZh_vW_Q0JdoQemkimVUGeGLkKhWxwU='},
             url='/v1/activities?q1=qv1&version=1.0.0')
 
 class MyRequestHandler(BaseHTTPRequestHandler):
