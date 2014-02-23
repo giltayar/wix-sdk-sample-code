@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0054a1d-dd0e-4f6f-85d5-f20abe82571b" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/wixsamples/try_get_activity_types.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wixsamples/api/activities.py" afterPath="$PROJECT_DIR$/wixsamples/api/activities.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_apiEndpointHttpLibRequest.py" afterPath="$PROJECT_DIR$/tests/test_apiEndpointHttpLibRequest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_apiSignatureCalculator.py" afterPath="$PROJECT_DIR$/tests/test_apiSignatureCalculator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_end_to_end.py" afterPath="$PROJECT_DIR$/tests/test_end_to_end.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/try_api.py" afterPath="$PROJECT_DIR$/try_api.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,11 +28,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="try_api.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="try_get_activity_types.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/wixsamples/try_get_activity_types.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="36" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="1.0887097" vertical-offset="0" max-vertical-offset="1575">
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="try_api.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/try_api.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.021489972" vertical-offset="0" max-vertical-offset="698">
-              <folding />
+            <state line="5" column="47" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,41 +53,10 @@
       <file leaf-file-name="activities.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wixsamples/api/activities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="131" column="0" selection-start="4740" selection-end="4740" vertical-scroll-proportion="0.0" vertical-offset="1707" max-vertical-offset="2505">
+            <state line="103" column="8" selection-start="3349" selection-end="3349" vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="2505">
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_apiEndpointHttpLibRequest.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_apiEndpointHttpLibRequest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="84" selection-start="1375" selection-end="1375" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="705">
-              <folding>
-                <element signature="e#0#49#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_end_to_end.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_end_to_end.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="41" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1350">
-              <folding>
-                <element signature="e#0#61#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test_apiSignatureCalculator.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_apiSignatureCalculator.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="69" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-              <folding />
             </state>
           </provider>
         </entry>
@@ -99,18 +79,20 @@
         <option value="$PROJECT_DIR$/api/test_apiEndpointPathConstructor.py" />
         <option value="$PROJECT_DIR$/tests/test_apiEndpointPathConstructor.py" />
         <option value="$PROJECT_DIR$/tests/test_activities.py" />
-        <option value="$PROJECT_DIR$/wixsamples/api/activities.py" />
         <option value="$PROJECT_DIR$/tests/test_apiSignatureCalculator.py" />
         <option value="$PROJECT_DIR$/tests/test_apiEndpointHttpLibRequest.py" />
         <option value="$PROJECT_DIR$/tests/test_end_to_end.py" />
+        <option value="$PROJECT_DIR$/tests/try_get_activity_types.py" />
+        <option value="$PROJECT_DIR$/wixsamples/try_get_activity_types.py" />
         <option value="$PROJECT_DIR$/try_api.py" />
+        <option value="$PROJECT_DIR$/wixsamples/api/activities.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1920" />
-    <option name="height" value="1174" />
+    <option name="height" value="874" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -231,6 +213,46 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.try_api">
+    <configuration default="false" name="try_api" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="wix-sdk-sample-code" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/try_api.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="try_get_activity_types" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="wix-sdk-sample-code" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/wixsamples/try_get_activity_types.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <configuration default="false" name="Unittests in $PROJECT_DIR$/tests/" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -298,52 +320,6 @@
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_CLASS" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
-      <option name="PUREUNITTEST" value="true" />
-      <option name="PARAMS" value="" />
-      <option name="USE_PARAM" value="false" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="try_api" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="wix-sdk-sample-code" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/try_api.py" />
-      <option name="PARAMETERS" value="" />
-      <RunnerSettings RunnerId="PyDebugRunner" />
-      <RunnerSettings RunnerId="PythonRunner" />
-      <ConfigurationWrapper RunnerId="PyDebugRunner" />
-      <ConfigurationWrapper RunnerId="PythonRunner" />
-      <method />
-    </configuration>
-    <configuration default="false" name="Unittest TestApiSignatureCalculator.test_calculate_signature_works" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="wix-sdk-sample-code" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_apiSignatureCalculator.py" />
-      <option name="CLASS_NAME" value="TestApiSignatureCalculator" />
-      <option name="METHOD_NAME" value="test_calculate_signature_works" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_METHOD" />
       <option name="PATTERN" value="" />
       <option name="USE_PATTERN" value="false" />
       <option name="PUREUNITTEST" value="true" />
@@ -477,19 +453,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in /Users/gilt/code/wix-sdk-sample-code/tests/" />
-      <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in TestApiSignatureCalculator" />
-      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in EndToEndTests" />
-      <item index="3" class="java.lang.String" itemvalue="Python.try_api" />
-      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest TestApiSignatureCalculator.test_calculate_signature_works" />
+      <item index="0" class="java.lang.String" itemvalue="Python.try_api" />
+      <item index="1" class="java.lang.String" itemvalue="Python.try_get_activity_types" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in /Users/gilt/code/wix-sdk-sample-code/tests/" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in TestApiSignatureCalculator" />
+      <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in EndToEndTests" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.try_api" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in /Users/gilt/code/wix-sdk-sample-code/tests/" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in EndToEndTests" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in TestApiSignatureCalculator" />
-        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittest TestApiSignatureCalculator.test_calculate_signature_works" />
+        <item index="0" class="java.lang.String" itemvalue="Python.try_get_activity_types" />
+        <item index="1" class="java.lang.String" itemvalue="Python.try_api" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in /Users/gilt/code/wix-sdk-sample-code/tests/" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in EndToEndTests" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in TestApiSignatureCalculator" />
       </list>
     </recent_temporary>
   </component>
@@ -520,19 +496,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1174" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1920" height="874" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992327" sideWeight="0.4997367" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32994455" sideWeight="0.4997367" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13586098" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25785583" sideWeight="0.7493418" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13586098" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25703326" sideWeight="0.7493418" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32902032" sideWeight="0.35176408" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32902032" sideWeight="0.6482359" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992327" sideWeight="0.5002633" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37723786" sideWeight="0.6482359" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -563,8 +539,21 @@
           <line>131</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/wixsamples/api/activities.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/wixsamples/api/activities.py</url>
+          <line>86</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="28" />
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="31" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -648,15 +637,21 @@
     <entry file="file://$PROJECT_DIR$/tests/test_apiSignatureCalculator.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="69" selection-start="585" selection-end="585" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
-          <folding />
+          <folding>
+            <marker date="1393157988000" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wixsamples/api/activities.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_end_to_end.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="131" column="0" selection-start="4740" selection-end="4740" vertical-scroll-proportion="0.0" vertical-offset="1707" max-vertical-offset="2505">
+        <state line="12" column="41" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1350">
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#61#0" expanded="true" />
+            <marker date="1393158531000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1393158531000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1393158531000" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1393158531000" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -670,19 +665,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_end_to_end.py">
+    <entry file="file://$PROJECT_DIR$/wixsamples/api/activities.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="41" selection-start="416" selection-end="416" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1350">
+        <state line="103" column="8" selection-start="3349" selection-end="3349" vertical-scroll-proportion="0.0" vertical-offset="1377" max-vertical-offset="2505">
           <folding>
-            <element signature="e#0#61#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/try_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="52" selection-end="52" vertical-scroll-proportion="0.021489972" vertical-offset="0" max-vertical-offset="698">
-          <folding />
+        <state line="5" column="47" selection-start="124" selection-end="124" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wixsamples/try_get_activity_types.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="0" selection-start="908" selection-end="908" vertical-scroll-proportion="1.0887097" vertical-offset="0" max-vertical-offset="1575">
+          <folding>
+            <element signature="e#0#13#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

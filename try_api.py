@@ -1,10 +1,9 @@
+import sys
 from wixsamples.api.activities import ActivitiesApi
 
 
 def main():
-    activities_api = ActivitiesApi('app-id',
-                                   'instance-guid',
-                                   'secret-key')
+    activities_api = ActivitiesApi(*sys.argv[1:])
 
     print activities_api.get_activity_types()
 

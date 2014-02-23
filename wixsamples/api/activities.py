@@ -102,10 +102,10 @@ class ApiSignatureCalculator(object):
 
 class ApiEndpointHttpLibRequest(object):
     def __init__(self,
-                 api_endpoint,
-                 connection,
-                 api_endpoint_path_constructor=None,
-                 signature_calculator=None):
+                  api_endpoint,
+                  connection,
+                  api_endpoint_path_constructor=None,
+                  signature_calculator=None):
         self.api_endpoint = api_endpoint
         self.api_endpoint_path_constructor = api_endpoint_path_constructor or ApiEndpointPathConstructor(api_endpoint)
         self.signature_calculator = signature_calculator or ApiSignatureCalculator(api_endpoint)
