@@ -19,7 +19,7 @@ class ActivitiesApi(object):
 
         response = ApiEndpointHttpLibRequest(api_endpoint,
                                              ApiEndpointConnectionFactory(api_endpoint).connect()).\
-            create_request('GET', [], '').get_response()
+            create_request('GET', [], '')
 
         if response.status == httplib.OK:
             return response.read()
@@ -66,7 +66,7 @@ class ApiEndpointConnectionFactory(object):
         self.api_endpoint = api_endpoint
 
     def connect(self):
-        (httplib.HTTPSConnection
+        return (httplib.HTTPSConnection
          if self.api_endpoint.scheme == 'https' else httplib.HTTPConnection)(self.api_endpoint.host,
                                                                              self.api_endpoint.port)
 
@@ -109,7 +109,7 @@ class ApiEndpointHttpLibRequest(object):
 
     # noinspection PyDefaultArgument
     def create_request(self, method, query_parameters, body, additional_headers={}):
-        return self.connection.request(
+        self.connection.request(
             method,
             url=self.api_endpoint_path_constructor.construct_path(query_parameters),
             body=body,
@@ -121,6 +121,8 @@ class ApiEndpointHttpLibRequest(object):
                                                                         query_parameters,
                                                                         body)
                                 }.iteritems())))
+
+        return self.connection.getresponse()
 
 
 class ApiEndpointPathConstructor(object):

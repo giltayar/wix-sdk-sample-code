@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0054a1d-dd0e-4f6f-85d5-f20abe82571b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/test_apiEndpointHttpLibRequest.py" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/tests/test_activities.py" afterPath="$PROJECT_DIR$/tests/test_end_to_end.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wixsamples/api/activities.py" afterPath="$PROJECT_DIR$/wixsamples/api/activities.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/test_apiSignatureCalculator.py" afterPath="$PROJECT_DIR$/tests/test_apiSignatureCalculator.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="wix-sdk-sample-code.iws" />
@@ -28,61 +27,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="test_apiEndpointHttpLibRequest.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/test_apiEndpointHttpLibRequest.py">
+      <file leaf-file-name="test_end_to_end.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/test_end_to_end.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="85" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+            <state line="57" column="8" selection-start="2426" selection-end="2426" vertical-scroll-proportion="0.3581662" vertical-offset="605" max-vertical-offset="1335">
               <folding>
-                <element signature="e#0#49#0" expanded="true" />
+                <element signature="e#0#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test_apiSignatureCalculator.py" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/tests/test_apiSignatureCalculator.py">
+      <file leaf-file-name="SimpleHTTPServer.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SimpleHTTPServer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="70" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.76109934" vertical-offset="0" max-vertical-offset="473">
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="activities.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wixsamples/api/activities.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="122" column="45" selection-start="4431" selection-end="4431" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220">
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="threading.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="653" column="8" selection-start="22978" selection-end="22978" vertical-scroll-proportion="0.0" vertical-offset="9630" max-vertical-offset="20025">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="case.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="330" column="0" selection-start="10953" selection-end="10953" vertical-scroll-proportion="0.0" vertical-offset="4622" max-vertical-offset="16035">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tcunittest.py" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/tcunittest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="97" column="0" selection-start="2818" selection-end="2818" vertical-scroll-proportion="0.0" vertical-offset="1288" max-vertical-offset="3060">
+            <state line="45" column="22" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3285">
               <folding />
             </state>
           </provider>
@@ -91,7 +50,7 @@
       <file leaf-file-name="BaseHTTPServer.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/BaseHTTPServer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="107" column="0" selection-start="3383" selection-end="3383" vertical-scroll-proportion="0.0" vertical-offset="1453" max-vertical-offset="9090">
+            <state line="408" column="8" selection-start="15141" selection-end="15141" vertical-scroll-proportion="0.0" vertical-offset="6057" max-vertical-offset="9090">
               <folding />
             </state>
           </provider>
@@ -100,8 +59,28 @@
       <file leaf-file-name="SocketServer.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="418" column="0" selection-start="13895" selection-end="13895" vertical-scroll-proportion="0.0" vertical-offset="6103" max-vertical-offset="10995">
+            <state line="670" column="6" selection-start="21686" selection-end="21686" vertical-scroll-proportion="0.0" vertical-offset="9758" max-vertical-offset="10995">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="case.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="354" column="0" selection-start="12247" selection-end="12247" vertical-scroll-proportion="0.0" vertical-offset="4982" max-vertical-offset="16035">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activities.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/wixsamples/api/activities.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="124" column="44" selection-start="4465" selection-end="4465" vertical-scroll-proportion="0.0" vertical-offset="1230" max-vertical-offset="2250">
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -120,20 +99,21 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/main.py" />
-        <option value="$PROJECT_DIR$/tests/test_activities.py" />
         <option value="$PROJECT_DIR$/api/activities.py" />
         <option value="$PROJECT_DIR$/api/test_apiEndpointPathConstructor.py" />
         <option value="$PROJECT_DIR$/tests/test_apiEndpointPathConstructor.py" />
-        <option value="$PROJECT_DIR$/wixsamples/api/activities.py" />
-        <option value="$PROJECT_DIR$/tests/test_apiEndpointHttpLibRequest.py" />
         <option value="$PROJECT_DIR$/tests/test_apiSignatureCalculator.py" />
+        <option value="$PROJECT_DIR$/tests/test_activities.py" />
+        <option value="$PROJECT_DIR$/tests/test_apiEndpointHttpLibRequest.py" />
+        <option value="$PROJECT_DIR$/wixsamples/api/activities.py" />
+        <option value="$PROJECT_DIR$/tests/test_end_to_end.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="874" />
+    <option name="width" value="1920" />
+    <option name="height" value="1174" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -239,6 +219,7 @@
     <property name="recentsLimit" value="5" />
     <property name="SearchEverywhereHistory" value="" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -317,6 +298,32 @@
       <module name="wix-sdk-sample-code" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_apiEndpointHttpLibRequest.py" />
       <option name="CLASS_NAME" value="TestApiEndpointHttpLibRequest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_CLASS" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <option name="PUREUNITTEST" value="true" />
+      <option name="PARAMS" value="" />
+      <option name="USE_PARAM" value="false" />
+      <RunnerSettings RunnerId="PyDebugRunner" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PyDebugRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
+    <configuration default="false" name="Unittests in EndToEndTests" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="wix-sdk-sample-code" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_end_to_end.py" />
+      <option name="CLASS_NAME" value="EndToEndTests" />
       <option name="METHOD_NAME" value="" />
       <option name="FOLDER_NAME" value="" />
       <option name="TEST_TYPE" value="TEST_CLASS" />
@@ -452,16 +459,18 @@
       <option name="USE_PATTERN" value="false" />
       <method />
     </configuration>
-    <list size="3">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in /Users/gilt/code/wix-sdk-sample-code/tests/" />
       <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in TestApiSignatureCalculator" />
       <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in TestApiEndpointHttpLibRequest" />
+      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in EndToEndTests" />
     </list>
     <recent_temporary>
-      <list size="3">
+      <list size="4">
         <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in /Users/gilt/code/wix-sdk-sample-code/tests/" />
-        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in TestApiEndpointHttpLibRequest" />
-        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in TestApiSignatureCalculator" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in EndToEndTests" />
+        <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in TestApiEndpointHttpLibRequest" />
+        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in TestApiSignatureCalculator" />
       </list>
     </recent_temporary>
   </component>
@@ -492,18 +501,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="874" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="1174" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24947146" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18181819" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45268542" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13586098" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25785583" sideWeight="0.7493418" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32992327" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32902032" sideWeight="0.35176408" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32902032" sideWeight="0.6482359" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -529,17 +538,17 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="8" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_end_to_end.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="21" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/test_activities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="60" selection-start="303" selection-end="303" vertical-scroll-proportion="0.31350482" vertical-offset="0" max-vertical-offset="622">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Library/Caches/PyCharm30/python_stubs/2088593488/datetime.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="204" column="8" selection-start="6785" selection-end="6785" vertical-scroll-proportion="0.37459806" vertical-offset="2827" max-vertical-offset="9495">
@@ -568,13 +577,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SimpleHTTPServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="16" selection-start="2941" selection-end="2941" vertical-scroll-proportion="1.8145162" vertical-offset="435" max-vertical-offset="3285">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pycharm/tcunittest.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="97" column="0" selection-start="2818" selection-end="2818" vertical-scroll-proportion="0.0" vertical-offset="1288" max-vertical-offset="3060">
@@ -582,57 +584,73 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/BaseHTTPServer.py">
+    <entry file="file://$PROJECT_DIR$/tests/test_apiSignatureCalculator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="107" column="0" selection-start="3383" selection-end="3383" vertical-scroll-proportion="0.0" vertical-offset="1453" max-vertical-offset="9090">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="418" column="0" selection-start="13895" selection-end="13895" vertical-scroll-proportion="0.0" vertical-offset="6103" max-vertical-offset="10995">
-          <folding />
+        <state line="24" column="70" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="450">
+          <folding>
+            <element signature="e#0#29#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/threading.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="653" column="8" selection-start="22978" selection-end="22978" vertical-scroll-proportion="0.0" vertical-offset="9630" max-vertical-offset="20025">
+        <state line="653" column="8" selection-start="22978" selection-end="22978" vertical-scroll-proportion="0.0" vertical-offset="9638" max-vertical-offset="20025">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="330" column="0" selection-start="10953" selection-end="10953" vertical-scroll-proportion="0.0" vertical-offset="4622" max-vertical-offset="16035">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wixsamples/api/activities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="122" column="45" selection-start="4431" selection-end="4431" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2220">
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_apiEndpointHttpLibRequest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="85" selection-start="1109" selection-end="1109" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+        <state line="27" column="34" selection-start="1129" selection-end="1166" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
           <folding>
             <element signature="e#0#49#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_apiSignatureCalculator.py">
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="70" selection-start="1136" selection-end="1136" vertical-scroll-proportion="0.76109934" vertical-offset="0" max-vertical-offset="473">
+        <state line="354" column="0" selection-start="12247" selection-end="12247" vertical-scroll-proportion="0.0" vertical-offset="4982" max-vertical-offset="16035">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SocketServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="670" column="6" selection-start="21686" selection-end="21686" vertical-scroll-proportion="0.0" vertical-offset="9758" max-vertical-offset="10995">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/SimpleHTTPServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="22" selection-start="1027" selection-end="1027" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3285">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/BaseHTTPServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="408" column="8" selection-start="15141" selection-end="15141" vertical-scroll-proportion="0.0" vertical-offset="5817" max-vertical-offset="9090">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wixsamples/api/activities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="44" selection-start="4465" selection-end="4465" vertical-scroll-proportion="0.0" vertical-offset="1230" max-vertical-offset="2250">
           <folding>
-            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_end_to_end.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="8" selection-start="2426" selection-end="2426" vertical-scroll-proportion="0.3581662" vertical-offset="605" max-vertical-offset="1335">
+          <folding>
+            <element signature="e#0#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
