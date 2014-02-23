@@ -9,7 +9,7 @@ import unittest
 
 
 class EndToEndTests(unittest.TestCase):
-    def test_ApiEndpointHttpLibRequest(self):
+    def test_ApiEndpointHttpLibRequest_works(self):
         fake_api_server = FakeApiServer()
         fake_api_server.start()
 
@@ -22,10 +22,9 @@ class EndToEndTests(unittest.TestCase):
 
         api_endpoint_http_lib_request = ApiEndpointHttpLibRequest(api_endpoint,
                                                                   ApiEndpointConnectionFactory(api_endpoint).connect())
-        response = api_endpoint_http_lib_request.create_request('GET', {'q1': 'qv1'}, 'body', {'h1': 'hv1'})
+        response = api_endpoint_http_lib_request.send_request('GET', {'q1': 'qv1'}, 'body', {'h1': 'hv1'})
 
-        self.assertEqual(response.status, 200)
-        self.assertEqual(response.read(), 'abody')
+        self.assertEqual(response, [2])
         self.assertEqual(FakeApiRequestHandler.last_method, 'GET')
         self.assertEqual(FakeApiRequestHandler.last_path, '/v1/activities?q1=qv1&version=1.0.0')
         self.assertEqual(FakeApiRequestHandler.last_headers.get('x-wix-instance-id'), '456')
@@ -78,7 +77,7 @@ class FakeApiRequestHandler(BaseHTTPRequestHandler):
 
         self.send_response(httplib.OK)
         self.end_headers()
-        self.wfile.write(str('abody'))
+        self.wfile.write(str('[2]'))
 
 
 if __name__ == '__main__':

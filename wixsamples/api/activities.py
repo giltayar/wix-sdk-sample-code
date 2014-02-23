@@ -1,5 +1,6 @@
 from collections import OrderedDict
 from datetime import datetime
+import json
 import pytz
 import httplib
 import urllib
@@ -20,14 +21,9 @@ class ActivitiesApi(object):
                                    self.api_id, self.instance_id, self.secret_key,
                                    now=datetime.now(pytz.utc), version="1.0.0")
 
-        response = ApiEndpointHttpLibRequest(api_endpoint,
-                                             ApiEndpointConnectionFactory(api_endpoint).connect()).\
-            create_request('GET', {}, '')
-
-        if response.status == httplib.OK:
-            return response.read()
-        else:
-            raise ApiException(response.status, response.read())
+        return ApiEndpointHttpLibRequest(api_endpoint,
+                                         ApiEndpointConnectionFactory(api_endpoint).connect()).\
+            send_request('GET', {}, '')
 
 
 class ApiEndpoint(object):
@@ -60,9 +56,10 @@ class ApiEndpoint(object):
         return {
             'x-wix-application-id': self.api_id,
             'x-wix-instance-id': self.instance_id,
+            'x-wix-timestamp': self.now.isoformat(),
         }
 
-    signature_query_parameters = {}
+    signature_query_parameters = query_parameters
 
 
 class ApiEndpointConnectionFactory(object):
@@ -84,7 +81,7 @@ class ApiSignatureCalculator(object):
 
         signed = self.sign(to_sign)
 
-        return base64.urlsafe_b64encode(signed)
+        return self.remove_padding(base64.urlsafe_b64encode(signed))
 
     def generate_string_to_be_signed(self, body, method, query_parameters):
         sorted_request_parameters = OrderedDict(
@@ -99,6 +96,9 @@ class ApiSignatureCalculator(object):
     def sign(self, to_sign):
         return hmac.new(str(self.api_endpoint.secret_key), msg=str(to_sign), digestmod=hashlib.sha256).digest()
 
+    def remove_padding(self, signature):
+        return signature.replace('=', '')
+
 
 class ApiEndpointHttpLibRequest(object):
     def __init__(self,
@@ -112,7 +112,7 @@ class ApiEndpointHttpLibRequest(object):
         self.connection = connection
 
     # noinspection PyDefaultArgument
-    def create_request(self, method, query_parameters, body, additional_headers={}):
+    def send_request(self, method, query_parameters, body, additional_headers={}):
         self.connection.request(
             method,
             url=self.api_endpoint_path_constructor.construct_path(query_parameters),
@@ -126,7 +126,12 @@ class ApiEndpointHttpLibRequest(object):
                                                                         body)
                                 }.iteritems())))
 
-        return self.connection.getresponse()
+        response = self.connection.getresponse()
+        response_body = response.read()
+        if response.status == httplib.OK:
+            return json.loads(response_body, encoding='utf-8')
+        else:
+            raise ApiException(response.status, response_body)
 
 
 class ApiEndpointPathConstructor(object):
