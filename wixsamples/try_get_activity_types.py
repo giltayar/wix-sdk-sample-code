@@ -64,6 +64,14 @@ def add_parameters_to_path(path, parameters):
         urllib.urlencode(dict(itertools.chain(parameters.iteritems(), [('version', API_VERSION)])))
 
 
+def create_http_data(app_key, secret_key, instance_id, path, parameters, body, method):
+    http_headers = create_http_headers(app_key, instance_id)
+    signature = calculate_signature(method, path, parameters, body, http_headers, secret_key)
+    add_signature_header(http_headers, signature)
+    path = add_parameters_to_path(path, parameters)
+    return http_headers, path
+
+
 def get_activity_types(app_key, secret_key, instance_id):
     # The information to be passed to the API
     method = 'GET'
@@ -72,10 +80,7 @@ def get_activity_types(app_key, secret_key, instance_id):
     body = ''
 
     # Create the HTTP data for the http request
-    http_headers = create_http_headers(app_key, instance_id)
-    signature = calculate_signature(method, path, parameters, body, http_headers, secret_key)
-    add_signature_header(http_headers, signature)
-    path = add_parameters_to_path(path, parameters)
+    http_headers, path = create_http_data(app_key, secret_key, instance_id, path, parameters, body, method)
 
     # Now do the HTTP request
     connection = create_http_connection()
